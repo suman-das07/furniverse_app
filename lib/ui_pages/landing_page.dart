@@ -24,15 +24,27 @@ class LandingPage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Text("Furniverse", style: GoogleFonts.limelight(fontSize: 50,color: Colors.white,height: 0),),
-                    Text("A World of Your Comforts", style: GoogleFonts.manjari(fontSize: 20, color: Colors.white, fontWeight: FontWeight.w200 ),)
+                    Text(
+                      "Furniverse",
+                      style: GoogleFonts.limelight(
+                        fontSize: 50,
+                        color: Colors.white,
+                        height: 0,
+                      ),
+                    ),
+                    Text(
+                      "A World of Your Comforts",
+                      style: GoogleFonts.manjari(
+                        fontSize: 20,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w200,
+                      ),
+                    ),
                   ],
                 ),
-
               ],
             ),
           ),
@@ -47,22 +59,27 @@ class LandingPage extends StatelessWidget {
                 width: 348,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  border: Border.all(
-                    color: Colors.black,
-                    width:3,
-                  )
+                  border: Border.all(color: Colors.black, width: 3),
                 ),
-                child: Center(child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text("Get Started", style: GoogleFonts.urbanist(color: Colors.black,fontSize: 30),),
-                    SizedBox(width: 35,),
-                    Icon(Icons.arrow_forward, size: 50,)
-                  ],
-                )),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Get Started",
+                        style: GoogleFonts.urbanist(
+                          color: Colors.black,
+                          fontSize: 30,
+                        ),
+                      ),
+                      SizedBox(width: 35),
+                      Icon(Icons.arrow_forward, size: 50),
+                    ],
+                  ),
+                ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
